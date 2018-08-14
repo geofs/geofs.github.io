@@ -7,14 +7,8 @@
       a {
         color: red;
       }
-      .bk-col {
-        background-color: azure;
-      }
       #exec-bio {
         background-color: lightgray;
-      }
-      #work-bio {
-        background-color: orange;
       }
       .bio-box {
         border: 1px solid black;
@@ -22,30 +16,44 @@
       .bio-box a {
         color: green;
       }
+      .alert {
+        background: red;
+      }
+      #exec-bio.alert {
+        background: red
+      }
+      .bio-box {
+        width: 75%;
+      }
+      .bio-box {
+        width: 50%;
+      }
     </style>
   </head>
   <body>
-    <h1>I'm an h1</h1>
+    <h1>I'm an h1 <a href="http://example.com/">Link</a></h1>
     <ul>
       <li>
-        <a href="http://example.com/">Link</a>
-</li> <li>
         <a href="http://example.com/">Link</a>
       </li>
       <li>
         <a href="http://example.com/">Link</a>
-</li> </ul>
+      </li>
+      <li>
+        <a href="http://example.com/">Link</a>
+      </li>
+    </ul>
     <h2>I'm an h2</h2>
-    <div id="exec-bio" class="bio-box bk-col">
+    <div id="exec-bio" class="bio-box">
       <a href="http://example.com/">I'm a link</a>
     </div>
-    <div id="work-bio"class="bio-box bk-col">
+    <div class="bio-box">
       <a href="http://example.com/">I'm a link</a>
     </div>
-    <div class="bio-box bk-col">
+    <div class="bio-box">
       <a href="http://example.com/">I'm a link</a>
     </div>
-    <div class="bio-box bk-col">
+    <div class="bio-box alert">
       <a href="http://example.com/">I'm a link</a>
     </div>
   </body>
