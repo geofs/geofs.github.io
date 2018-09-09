@@ -58,8 +58,14 @@ h1 {
   font-size: 7vw;
   margin-top: 0; 
 }
+h2 {
+  font-size: 2em;
+}
 a{
-  color: #f00;
+  color: #6397b5;
+}
+p {
+  line-height: 1.5;
 }
 h2 + p {
   font-size: 0.8em;
@@ -152,12 +158,58 @@ h2 + p {
   color: #ccc;
 }
 /*HERO STYLES*/
-.full-hero { background-color: #c7dbfc;
-height: 50vw;
+.full-hero { 
+background-color: #c7dbfc;
+box-sizing: border-box;
+background-size: cover;
+height: 100vw;
+padding-top: 10vh;
+}
+.full-hero:after{
+  border: 10px solid;
+  border-color: #fff transparent transparent;
+  bottom: 2vh;
+  color: #fff;
+  content: "";
+  height: 0;
+  left: 50%;
+  position: absolute;
+  transform:translate(-50%, 0);
+  width: 0;
+}
+.hero-home {
+  background-image: url(/images/shark.jpg);
+  background-position: center top;
+}
+.hero-content {
+  color: #fff;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  transform: translate(0, -50%);
+  top: 50%;
+}
+.hero-content h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 7vw;
+  margin-bottom: 0.25em;
+}
+.hero-content .social-link {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #556c83;
+}
+.hero-content .social-link:hover {
+  background-color: #000;
+  color: #fff;
 }
 
-
 /* SOCIAL STYLES */
+.social-list{
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
 .social-link {
   background: rgba(150, 150, 150, 0.5);
   border-radius: 99px;
@@ -175,14 +227,34 @@ height: 50vw;
   vertical-align: middle;
   width: 2.5em;
 }
-.social-list{
-  list-style: none;
-  padding: 0;
-  text-align: center;
-}
+
 .social-list > li {
   display: inline-block;
   margin: 0 0.5em; 
+}
+
+/* HOMEPAGE STYLES */
+.home-section {
+  margin: 6rem auto;
+  max-width: 980px;
+  width: 90vh;
+}
+.home-section h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.home-callout {
+  background-color: #000;
+  color: #fff;
+  padding: 7vh 0;
+}
+.callout-title {
+  font-size: 5.75vh;
+  text-align: right;
+  text-transform: uppercase;
+}
+.callout-copy {
+  font-style: 0.8rem;
 }
 
 /* BIO STYLES */
@@ -193,32 +265,27 @@ height: 50vw;
   overflow: hidden;
 }
 .bio-box {
-  border: 1px solid black;
-  border-style: black black red;
   box-sizing: border-box;
   float: left;
   font-size: 1rem;
-  margin: 40px 1% 0;
-  padding: 0 2% 2%;
-  width: 23%;
+  margin: 6rem 0 0;
+  padding: 0 3% ;
+  width: 33%;
 }
 .bio-box h3 {
   color: #fff;
   font-size: 1.5em;
   margin: -40px 0 1em;
   text-align: center;
+  text-transform: uppercase;
 }
 .bio-box img {
   width: 100%;
 }
 .bio-box .social-link {
   display: block;
-  margin: 2em 0 1em;
+  margin: 2em auto 1em;
 }
 .bio-copy{
-  font-size: 1em;
-  line-height: 1.5;
-}
-.bio-copy a {
-  color: green;
+  font-size: 0.75em;
 }
